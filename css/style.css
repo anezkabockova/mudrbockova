@@ -1,0 +1,406 @@
+/* 
+světle modrá #E5F2F6 
+tmavě modrá #358CB3
+zvýraznění #205D7E
+text menu #1E597A
+menu active a hover #51B2DC
+
+*/
+html {
+    box-sizing: border-box;
+  }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #358CB3 ;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* navigation */
+/* přidat hamburger podle instrukcí od Toma */
+
+nav {
+    background-color: #E5F2F6;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px 3px #358CB3;
+    width: 100%;
+    color: #1E597A;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+li {
+padding: 0.5rem;
+flex-grow: 1;
+justify-content: space-evenly;
+position: relative;
+}
+
+.menu li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+
+}
+
+.menu a:hover li {
+    transition: transform 0.3s ease-in;
+    transform: scale(5rem);
+    border: 1px solid #358CB3;
+    left: 0;
+    bottom: 0;
+    
+
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding:1rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #358CB3;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+/* main  */
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.8rem;
+}
+
+.logo {
+    width: 130px;
+}
+
+h1 {
+    font-size: 1.3rem ;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title-main {
+    text-transform: uppercase;
+    margin-top: 3rem;
+
+}
+
+.perex {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+}
+
+.border {
+    border: 2px solid #358CB3;
+    padding: 0.7rem;
+    background-color: #E5F2F6 ;
+    margin: 0 1rem 1rem;
+}
+
+.patients {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9ěrem;
+}
+
+a {
+    text-decoration: none;
+    color: #358CB3;
+    position: relative;
+}
+
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* table */
+/* padding pro první řádek */
+
+table {
+    font-size: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+    color: #205D7E;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto  2rem;
+    border-collapse: collapse;
+}
+
+.table-first-row {
+    padding-bottom: 0.5rem;
+}
+
+th {
+    width: 15%;
+}
+
+th:first-child {
+    width: 5%;
+}
+
+.opening-hours td {
+    border: 1px solid #E5F2F6;
+    padding: 0.3rem;
+    
+}
+
+
+/* adresa */
+
+.mapa {
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+
+.mapa::before {
+    content: '';
+    display: block;
+    padding-top: 80%;
+}
+
+.mapa iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+/* footer */
+
+footer {
+    background-color: #358CB3;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+    box-shadow: 0px 5px 20px 8px #358CB3;
+    align-items: baseline;
+    position: relative;
+}
+
+.kontakt {
+background-color: #E5F2F6 ;
+padding: 0.5rem 0 2rem ;
+}
+
+.telefon, 
+.mail {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.telefon {
+    padding-bottom: 0.5rem;
+}
+
+.telefon::before {
+    content: url('/images/phone.svg');
+    padding-right: 0.5rem;
+    position: absolute;
+    right: 3;
+
+}
+
+.mail::before {
+    content: url('/images/mail.svg');
+    padding-right: 0.5rem;
+    width: 5px;
+}
+
+.obrazek {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.obrazek img {
+    width: 80%;
+    max-width: 250px;
+}
+
+.popisek {
+    text-align: left;
+}
+
+.title {
+ text-transform: uppercase;
+ font-size: 1rem;
+ background-color: #358CB3;
+ color:#fff ;
+ padding: 0.5rem;
+ width: 85%;
+ max-width: 250px;
+ border-radius: 25px;
+ font-weight: 500;
+ margin-bottom: 1rem;
+}
+
+.ockovani {
+    padding: 1rem 1.5rem;
+}
+
+.domluva {
+    margin-bottom: 3rem;
+}
+
+.injection {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+
+
+
+/* kontakt */
+
+.mudrbockova {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.mudrbockova .logo {
+width: 50px;
+align-self: center;
+}
+
+.mudrbockova .perex {
+    margin: 0;
+}
+
+.mudrbockova h1 {
+    margin: 1rem 1rem 0.5rem;
+}
+
+.zamestnanci p {
+    text-align: left;
+    padding:0 2rem 1rem;
+    line-height: 2;
+    font-size: 0.7rem;
+}
+
+.header {
+margin: 0 2rem;
+}
+
+/* vytvořit nová svg v barvě fontu + přidat do kontaktu */
+
+/* pojistovna */
+
+.pojistovna {
+/*     width: 30%;
+ */    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.pojistovna-img {
+    width: 100%;
+}
+
+
+
+/* cenik */
+/* mezery mezi tbody
+vytvořit pseudoelement mezi tbody */
+
+
+.price-subject {
+    text-align: left;
+    width: 50%;
+}
+
+.price {
+    text-align: right;
+}
+
+.pricelist {
+    line-height: 2;
+    padding: 0 2rem;
+    max-width: 300px;
+}
+
+.pricelist tbody {
+    margin-bottom: 1rem;
+}
+
+.payment {
+    margin-bottom: 2rem;
+}
+
+.pricelist tbody::after {
+    content: '';
+    border: 1px solid blue;
+    padding-top: 1rem;
+    transform: rotate(90deg);
+}
