@@ -4,8 +4,16 @@ tmavě modrá #358CB3
 zvýraznění #205D7E
 text menu #1E597A
 menu active a hover #51B2DC
+bgc menu #44A5CB
 
 */
+:root {
+    --primary-color: #44A5CB;
+    --overlay-color:  #E5F2F6;
+    --menu-speed: 0.75s; 
+}
+
+
 html {
     box-sizing: border-box;
   }
@@ -29,6 +37,18 @@ main {
 /* navigation */
 /* přidat hamburger podle instrukcí od Toma */
 
+
+.nav-wrap {
+    background-color: #44A5CB;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
+header {
+margin-top: 90px;
+
+}
 nav {
     background-color: #E5F2F6;
     margin-bottom: 2rem;
@@ -54,22 +74,26 @@ justify-content: space-evenly;
 position: relative;
 }
 
-.menu li::after {
+.menu a:hover::after {
+/*     width: 100%;
+ */    transition: opacity 0.3s ease-in;
+ opacity: 2;
+}
+
+.menu a::after {
     content: '';
     position: absolute;
-    width: 0;
-
+    display: block;
+    width: 100%;
+    opacity: 0;
+    height: 1px;
+    background-color: #358CB3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;   
 }
 
-.menu a:hover li {
-    transition: transform 0.3s ease-in;
-    transform: scale(5rem);
-    border: 1px solid #358CB3;
-    left: 0;
-    bottom: 0;
-    
-
-}
+/* hamburger */
 
 .container {
     display: inline-block;
@@ -255,24 +279,32 @@ padding: 0.5rem 0 2rem ;
 .mail {
     color: white;
     font-size: 0.7rem;
+    align-self: center;
+    margin-left: 0.5rem;
 }
 
-.telefon {
-    padding-bottom: 0.5rem;
-}
 
-.telefon::before {
+/* .telefon::before {
     content: url('/images/phone.svg');
     padding-right: 0.5rem;
     position: absolute;
     right: 3;
-
 }
 
 .mail::before {
     content: url('/images/mail.svg');
     padding-right: 0.5rem;
     width: 5px;
+}
+ */
+
+.icon {
+    padding: 1px;
+}
+
+.phone, 
+.email {
+    display: flex;
 }
 
 .obrazek {
@@ -354,6 +386,27 @@ align-self: center;
 margin: 0 2rem;
 }
 
+.phone-kontakt .telefon, 
+.email-kontakt .mail {
+    color: #358CB3;
+
+}
+
+.phone-kontakt, 
+.email-kontakt {
+    margin: 0.5rem 2rem;
+    display: flex;
+}
+
+.email-kontakt {
+    margin-bottom: 2rem;
+}
+
+.icon-kontakt {
+    font-size: 0.6rem;
+    align-self: baseline;
+}
+
 /* vytvořit nová svg v barvě fontu + přidat do kontaktu */
 
 /* pojistovna */
@@ -392,15 +445,11 @@ vytvořit pseudoelement mezi tbody */
 
 .pricelist tbody {
     margin-bottom: 1rem;
+    padding: 1rem;
+
 }
 
 .payment {
     margin-bottom: 2rem;
 }
 
-.pricelist tbody::after {
-    content: '';
-    border: 1px solid blue;
-    padding-top: 1rem;
-    transform: rotate(90deg);
-}
