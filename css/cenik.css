@@ -1,0 +1,38 @@
+/* cenik */
+/* mezery mezi tbody
+vytvořit pseudoelement mezi tbody */
+
+h4 {
+    margin: 2rem 0 0 1rem;
+}
+
+.pricelist {
+    line-height: 1.5;
+    font-size: 0.7rem;
+    margin: 0 auto 1rem;
+    width: 90%;
+    max-width: 400px;
+    font-size: 0.8rem;
+}
+
+.pricelist tr :first-child {
+    text-align: left;
+    font-weight: normal;
+    width: 70%;
+}
+
+.pricelist tr :last-child {
+    text-align: right;
+    font-weight: normal;
+}
+
+.payment {
+    margin: 3rem 1.2rem;
+    font-size: 0.8rem;
+}
+
+.pricelist tbody tr .title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+}

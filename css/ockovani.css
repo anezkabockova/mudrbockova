@@ -1,0 +1,43 @@
+.img-header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.img-header img {
+    width: 80%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color:#fff ;
+    padding:1rem;
+    width: 85%;
+    max-width: 250px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.description {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-left: 0.4rem;
+}
+
+.vaccination {
+    padding: 1rem 1.5rem 0;
+}
+
+.vaccination.last {
+    margin-bottom: 4rem;
+}
+
+.injection {
+    width: 100%;
+    padding: 1rem 0;
+}

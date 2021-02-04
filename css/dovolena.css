@@ -1,0 +1,20 @@
+header::after {
+    content: ' ';
+    border-bottom: 2px solid var(--primary-color);
+    width: 20px;
+    margin-top: 1rem;
+}
+
+.vaccation {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.alt {
+    display: none;
+}
+
+main {
+    margin-bottom: 10rem;
+}

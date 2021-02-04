@@ -1,0 +1,65 @@
+.subtitle {
+    margin-top: 0;
+}
+
+.container-empl p {
+    text-align: left;
+    padding:0 0.5rem 1rem 0.5rem;
+    line-height: 2.5;
+    font-size: 0.7rem;
+}
+
+.phone, 
+.mail {
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+.container-contact {
+    margin: 0.5rem;
+    display: flex;
+}
+
+.icon {
+    font-size: 0.6rem;
+    align-self: baseline;
+}
+
+.container-contact.email {
+    margin-bottom: 3rem;
+}
+
+/* table */
+
+.table-schedule {
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    min-width: 310px;
+    width: 95%;
+    margin: 1rem auto 3rem;
+    border-collapse: collapse;
+}
+
+tr :first-child {
+    padding-bottom: 0.8rem;
+}
+
+th {
+    width: 15%;
+}
+
+th:first-child {
+    width: 5%;
+}
+
+.table-schedule td {
+    border: 1px solid var(--overlay-color);
+    padding: 0.4rem 0.2rem;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 0.5rem 0 2.5rem 0.5rem;
+}

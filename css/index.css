@@ -1,0 +1,112 @@
+
+.logo {
+    width: 130px;
+}
+
+.container-box {
+    border: 2px solid var(--primary-color);
+    padding: 0.7rem;
+    background-color: var(--overlay-color) ;
+    margin: 0 1rem 2rem;
+    text-align: center;
+}
+
+.container-box :first-child {
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+
+.container-box :last-child {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+
+/* table */
+
+.table-schedule {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 0rem;
+    color: var(--primary-color);
+    min-width: 310px;
+    width: 95%;
+    margin: 1rem auto 3rem;
+    border-collapse: collapse;
+}
+
+tr :first-child {
+    padding-bottom: 0.8rem;
+}
+
+th {
+    width: 15%;
+}
+
+th:first-child {
+    width: 5%;
+}
+
+.table-schedule td {
+    border: 1px solid var(--overlay-color);
+    padding: 0.4rem 0.2rem;  
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 0.5rem 0 2.5rem 0.5rem;
+}
+
+/* kontakt */
+
+.contact {
+    background-color: var(--overlay-color) ;
+    padding: 0.5rem 0 3rem;
+}
+    
+.telefon, 
+.mail {
+        color: white;
+        font-size: 0.7rem;
+        align-self: center;
+        margin-left: 0.5rem;
+}
+
+address p {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* mapa */
+
+.mapa {
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+
+.mapa::before {
+    content: '';
+    display: block;
+    padding-top: 80%;
+}
+
+.mapa iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    margin: 0;
+}

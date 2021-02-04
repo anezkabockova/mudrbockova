@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <title>MUDr. Bočková | Praktický lékař pro dospělé</title>
 </head>
 
@@ -13,34 +15,25 @@
 
     <!-- menu -->
 
-    <!--     <nav>
-        <ul class="menu">
-            <li><a class="active" href="index.html">Úvod</a></li>
-            <li><a href="ockovani.html">Očkování</a></li>
-            <li><a href="cenik.html">Ceník</a></li>
-            <li><a href="pojistovna.html">Pojišťovna</a></li>
-            <li><a href="dovolena.html">Dovolená</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
- -->
     <div class="nav-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="home" viewBox="0 0 16 16">
+            <a href="index.html">
+                <path fill="white" fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill="white" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+            </a>
+        </svg>
+        <a href="index.html"></a>
+        </span>
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
                 <div></div>
             </div>
+
             <div class="menu">
                 <div>
                     <div>
                         <ul>
-                            <li><a href="index.html">Úvod</a></li>
                             <li><a href="ockovani.html">Očkování</a></li>
                             <li><a href="cenik.html">Ceník</a></li>
                             <li><a href="pojistovna.html">Pojišťovna</a></li>
@@ -60,56 +53,56 @@
                 <img class="logo" src="images/hvezda.jpg" alt="logo">
 
                 <h1>MUDr. Radomíra Bočková</h1>
-                <div class="perex">Praktický lékař pro&nbspdospělé</div>
+                <div class="subtitle">Praktický lékař pro&nbspdospělé</div>
 
-                <div class="border">
+                <div class="container-box">
 
                     <p>Z&nbspdůvodu prevence šíření infekčních onemocnění od&nbsp25.5.2020 do&nbspodvolání <strong>návštěvy u&nbsplékaře pouze po&nbspobjednání</strong>. V&nbspakutních případech kontaktujte zdravotní sestru telefonicky na&nbspčísle <strong><a href="tel:312619123">312&nbsp619&nbsp123.</a></strong></p>
 
-                    <p class="patients">Nové pacienty nepřijímáme.</p>
+                    <p>Nové pacienty nepřijímáme.</p>
                 </div>
             </header>
 
             <h2>Ordinační hodiny</h2>
 
-            <table class="opening-hours">
-                <tr class="table-first-row">
+            <table class="table-schedule">
+                <tr>
                     <th></th>
                     <th>Pouze pro objednané</th>
-                    <th>Kontroly pracovní neschopnosti a pro&nbspneobjednané</th>
+                    <th>Kontroly PN a pro&nbspneobjednané</th>
                     <th>Pouze pro objednané</th>
                     <th>Pouze pro objednané</th>
                 </tr>
                 <tr>
-                    <td class="day"><strong>PO</strong></td>
+                    <td class><strong>PO</strong></td>
                     <td>-</td>
                     <td>7:30-11:00</td>
                     <td>11:00-12:30</td>
                     <td>13:00-15:00</td>
                 </tr>
                 <tr>
-                    <td class="day"> <STRong>ÚT</STRong></td>
+                    <td class> <STRong>ÚT</STRong></td>
                     <td>-</td>
                     <td>12:00-18:00</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="day"> <strong>ST</strong></td>
+                    <td class> <strong>ST</strong></td>
                     <td>-</td>
                     <td>7:30-11:00</td>
                     <td>11:00-12:30</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="day"> <strong>ČT</strong></td>
+                    <td class> <strong>ČT</strong></td>
                     <td>7:00-8:00</td>
                     <td>8:00-13:00</td>
                     <td>13:00-14:00</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td class="day"> <strong>PÁ</strong></td>
+                    <td class> <strong>PÁ</strong></td>
                     <td>-</td>
                     <td>7:00-9:00</td>
                     <td>9:00-12:00</td>
@@ -119,33 +112,33 @@
             </table>
 
 
-            <section class="kontakt">
-
-                <h2>Kde nás najdete</h2>
-
-                <address>
-                    <p>EUC Klinika Kladno s.r.o. <br>
-                        Huťská 211 <br>
-                        272 80 Kladno</p>
-
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.6826704925006!2d14.10468761563075!3d50.148367979434795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bb7def80bdc6d%3A0x4fb014948bdfe98!2sEUC%20Klinika%20Kladno!5e0!3m2!1scs!2scz!4v1610485950195!5m2!1scs!2scz" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </address>
-            </section>
         </main>
+        <section class="contact">
+
+            <h2>Kde nás najdete</h2>
+
+            <address>
+                <p>EUC Klinika Kladno s.r.o. <br>
+                    Huťská 211 <br>
+                    272 80 Kladno</p>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.6826704925006!2d14.10468761563075!3d50.148367979434795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bb7def80bdc6d%3A0x4fb014948bdfe98!2sEUC%20Klinika%20Kladno!5e0!3m2!1scs!2scz!4v1610485950195!5m2!1scs!2scz" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </address>
+        </section>
 
 
         <footer>
-            <div class="phone"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-telephone" viewBox="0 0 16 16">
+            <div class="container-phone"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-telephone" viewBox="0 0 16 16">
                     <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                 </svg>
-                <a class="telefon" href="tel:312619123">312 619 123 (pouze v ordinačních hodinách)</a>
+                <a href="tel:312619123">312 619 123 (pouze v ordinačních hodinách)</a>
             </div>
-            <div class="email"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope" viewBox="0 0 16 16">
+            <div class="container-email"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope" viewBox="0 0 16 16">
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
                 </svg>
-                <a class="mail" href="mailto:bockova.pl@seznam.cz">bockova.pl@seznam.cz</a>
+                <a href="mailto:bockova.pl@seznam.cz">bockova.pl@seznam.cz</a>
             </div>
         </footer>
 
