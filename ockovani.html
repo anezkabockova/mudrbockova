@@ -12,13 +12,13 @@
 <body>
 
     <!-- menu -->
-    <div class="nav-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="home" viewBox="0 0 16 16">
-            <a href="index.html">
+    <nav class="nav-wrap">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="home" viewBox="0 0 16 16">
                 <path fill="white" fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                 <path fill="white" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-            </a>
-        </svg>
+            </svg>
+        </a>
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -39,58 +39,70 @@
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- očkování -->
+    <!-- očkování -->
 
-        <header>
-            <h2>Očkování</h2>
-            <div class="img-header">
-                <img src="images/injection1.jpg" alt="ockovani">
-            </div>
-        </header>
-
+    <header>
+        <h2>Očkování</h2>
+        <div class="img-header">
+            <img src="images/injection1.jpg" alt="ockovani">
+        </div>
+    </header>
+    <main>
         <div class="vaccination">
             <h3>Chřipka</h3>
-            <p class="description"> <strong>VAXIGRIP TETRA </strong> <br>
-                Samoplátce celkem 350 Kč, vakcína 250 Kč + aplikace 100 Kč od 65ti let na pojišťovnu nebo s DG možnou přeočkování na poj</p>
+            <dl> VAXIGRIP TETRA </dl>
+            <dd>cena pro samoplátce: 350 Kč
+            <dd>(vakcína 250 Kč + aplikace 100 Kč)</dd>
+            <dd>od 65 let na pojišťovnu nebo s DG možnost přeočkování na pojišťovnu.</dd>
         </div>
 
         <div class="vaccination">
             <h3>Klíšťová encefalitida</h3>
-            <p class="description"> <strong>FSME - IMMUN </strong> <br>
-                Celkem 900 Kč, vakcína 800 Kč + aplikace 100 Kč <br>
-                3 dávky: 1., 2. - za 4 týdny, 3. - za 5-12 měsíců zrychlená: 1., 2. - za 2 týdny, 3. - za 5-12 měsíců
-            </p>
+            <dl>FSME - IMMUN</dl>
+            <dd> cena pro samoplátce: 900 Kč</dd>
+            <dd>(vakcína 800 Kč + aplikace 100 Kč)</dd>
+            <dd>3 dávky: 1., 2. za 4 týdny, 3. za 5-12 měsíců</dd>
+            <dd>zrychlená: 1., 2. za 2 týdny, 3. za 5-12 měsíců.</dd>
         </div>
 
         <div class="vaccination">
             <h3>Boostrix</h3>
-            <p class="description"> Samoplátce celkem 800 Kč, vakcína 700 Kč + aplikace 100 Kč Vakcína Boostrix chrání proti <strong>záškrtu, tetanu, dávivému kašli</strong>
-            </p>
+            <dl> Vakcína chrání proti záškrtu, tetanu, dávivému kašli</dl>
+            <dd>cena pro samoplátce: 800 Kč</dd>
+            <dd>(vakcína 700 Kč + aplikace 100 Kč)</dd>
         </div>
 
 
         <img class="injection" src="images/injection2.jpg" alt="ockovani2">
 
-        <div class="vaccination last">
+        <div class="vaccination">
             <h3>Očkování po domluvě</h3>
-            <p class="description">Očkujeme i na Vaši žádost. Objednávky podávejte prosím při návštěvě nebo telefonicky a to <strong>1 měsíc předem</strong>. Cena očkování je závislá na ceně vakcíny. Za aplikaci zaplatíte 100 Kč. </p>
+            <dl>Očkujeme i na Vaši žádost</dl>
+            <dd>Objednávky podávejte prosím při návštěvě nebo telefonicky a to <strong>1 měsíc předem</strong>.</dd>
+            <dd>Cena očkování je závislá na ceně vakcíny.</dd>
+            <dd>Za aplikaci zaplatíte 100 Kč. </dd>
         </div>
 
-        <!-- footer -->
+    </main>
 
-        <footer>
-            <div class="container-phone"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-telephone" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                </svg>
-                <a href="tel:312619123">312 619 123 (pouze v ordinačních hodinách)</a>
-            </div>
-            <div class="container-email"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                </svg>
-                <a href="mailto:bockova.pl@seznam.cz">bockova.pl@seznam.cz</a>
-            </div>
-        </footer>
+    <!-- footer -->
+
+    <footer>
+        <div class="container-contact">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+            <a href="tel:312619123">312&nbsp619&nbsp123 <a href="#openingHours">(pouze v ordinačních hodinách)</a></a>
+        </div>
+        <div class="container-contact">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+            </svg>
+            <a href="mailto:bockova.pl@seznam.cz">bockova.pl@seznam.cz</a>
+        </div>
+    </footer>
 
 </body>
 

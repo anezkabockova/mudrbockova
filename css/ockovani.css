@@ -11,31 +11,39 @@
 
 h3 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: var(--primary-color);
     color:#fff ;
     padding:1rem;
-    width: 85%;
+    width: 80%;
     max-width: 250px;
     border-radius: 25px;
     font-weight: 500;
     margin-bottom: 1rem;
 }
-
-.description {
-    text-align: left;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    padding-left: 0.4rem;
-}
-
 .vaccination {
-    padding: 1rem 1.5rem 0;
+    padding: 1rem 0 0;
 }
 
-.vaccination.last {
+.vaccination:last-child
+ {
     margin-bottom: 4rem;
 }
+
+.vaccination dl {
+    text-align: left;
+    font-size: var(--text-main-small);
+    padding-left: 0.4rem;
+    font-weight: 700;
+}
+
+dd {
+    margin-left: 0.4rem;
+    line-height: 1.5;
+}
+
+
+
 
 .injection {
     width: 100%;

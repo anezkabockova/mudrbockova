@@ -2,17 +2,13 @@
 /* mezery mezi tbody
 vytvořit pseudoelement mezi tbody */
 
-h4 {
-    margin: 2rem 0 0 1rem;
-}
 
 .pricelist {
     line-height: 1.5;
-    font-size: 0.7rem;
+    font-size: var(--text-main-small);
     margin: 0 auto 1rem;
     width: 90%;
     max-width: 400px;
-    font-size: 0.8rem;
 }
 
 .pricelist tr :first-child {
@@ -26,12 +22,12 @@ h4 {
     font-weight: normal;
 }
 
-.payment {
+.pricelist-footnote {
     margin: 3rem 1.2rem;
-    font-size: 0.8rem;
+    font-size: var(--primary-color);
 }
 
-.pricelist tbody tr .title {
+.pricelist tbody tr .title-pricelist {
     text-align: left;
     font-weight: bold;
     font-size: 0.9rem;

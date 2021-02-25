@@ -2,11 +2,24 @@
     margin-top: 0;
 }
 
-.container-empl p {
-    text-align: left;
-    padding:0 0.5rem 1rem 0.5rem;
-    line-height: 2.5;
-    font-size: 0.7rem;
+.container-employee {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.container-employee p {
+    font-size: var(--text-main-small);
+    margin: 0;
+}
+
+
+.container-employee .employee {
+    font-weight: 600; 
+    font-size: 1rem;
+}
+
+.container-employee .role {
+    margin: 0.3rem 0 1.2rem 0 ;
 }
 
 .phone, 
@@ -30,36 +43,3 @@
     margin-bottom: 3rem;
 }
 
-/* table */
-
-.table-schedule {
-    font-size: 0.6rem;
-    text-align: center;
-    color: var(--primary-color);
-    min-width: 310px;
-    width: 95%;
-    margin: 1rem auto 3rem;
-    border-collapse: collapse;
-}
-
-tr :first-child {
-    padding-bottom: 0.8rem;
-}
-
-th {
-    width: 15%;
-}
-
-th:first-child {
-    width: 5%;
-}
-
-.table-schedule td {
-    border: 1px solid var(--overlay-color);
-    padding: 0.4rem 0.2rem;
-}
-
-.note {
-    font-size: 0.6rem;
-    margin: 0.5rem 0 2.5rem 0.5rem;
-}

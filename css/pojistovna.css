@@ -5,16 +5,17 @@
     flex-direction: column;
 }
 
-.item {
+.gallery-item {
     display: flex;
     justify-content: center;
     padding: 0.8rem;
 }
 
-.item img {
-    width: 50%;
+.gallery-item img {
+    width: 90%;
 }
 
-.item:last-child {
+.gallery-item:last-child {
+    margin-top: 1rem    ;
     margin-bottom: 4rem;
 }

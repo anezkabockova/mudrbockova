@@ -11,6 +11,7 @@ bgc menu #44A5CB
     --primary-color: #246C94;
     --overlay-color:  #E5F2F6;
     --menu-speed: 0.75s; 
+    --text-main-small: 0.8rem;
 }
 
 html {
@@ -28,11 +29,11 @@ body {
 }
 
 header {
-    margin-top: 90px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
 .title-main {
     text-transform: uppercase;
@@ -45,12 +46,13 @@ a {
 }
 
 main {
-    margin: 1.5rem;
+    font-size: var(--text-main-small);
+    margin: 0.8rem;
 }
 
 h1 {
-    font-size: 1.8rem ;
-    font-weight: 500;
+    font-size: 1.3rem ;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -65,15 +67,113 @@ h2 {
 .subtitle {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* menu */
-.nav-wrap {
+
+nav {
+    background-color:var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none ;
+    justify-content: center;
+
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px ;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+nav .mainMenu li a:hover {
+    color:violet;
+}
+
+nav .openNav {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeNav {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:800px) {
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--overlay-color);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeNav {
+        display: block;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+    }
+
+    nav .openNav {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+         background-color: none;
+         color: green;
+         font-size: 1.6rem; 
+    }
+}
+
+/* hamburger */
+
+
+/* @media(max-width: 768px) {
+    .mainMenu {
+        display: none;
+    }
+
+    .mainMenu.toggleCls {
+        display: block;
+    }
+}
+
+@media(min-width: 769px) {
+    .hamIcon {
+        display:none;
+    }
+}
+ */
+
+/* konec hamburgru */
+
+
+
+/* .nav-wrap {
     background-color: var(--primary-color);
     height: 60px;
-    position: absolute;
-    top: 0;
     box-shadow: 0px 0px 20px 3px #358CB3;
 }
 
@@ -112,7 +212,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;   
-}
+} */
 
 .home {
     position: absolute;
@@ -140,14 +240,13 @@ footer {
     padding: 1px;
 }
 
-.container-phone, 
-.container-email {
+.container-contact {
     display: flex;
-    padding-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 footer a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #fff;
     margin-left: 0.5rem;
 }
@@ -350,14 +449,6 @@ footer a::before {
     transition:  color 0.4s ease;
 }
 
-/* pozn. konzultace 
-- oddělit ikony, aby na sobě nebyly tak přilepené
-- 
-
-
-
-*/
-
 /* mapa */
 
 .mapa {
@@ -390,21 +481,14 @@ footer {
 
 /* kontakt */
 
-.contact {
-    background-color: var(--overlay-color) ;
-    padding: 0.5rem 0 3rem;
-    }
-    
-    .telefon, 
-    .mail {
-        color: white;
-        font-size: 0.7rem;
-        align-self: center;
-        margin-left: 0.5rem;
-    }
-
 address p {
     text-align: center;
     padding-bottom: 1.5rem;
     font-size: 0.9rem;
 }
+
+.contact {
+    background-color: var(--overlay-color) ;
+    padding: 0.5rem 0 3rem;
+    }
+    
