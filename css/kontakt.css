@@ -2,6 +2,7 @@
     margin-top: 0;
 }
 
+
 .container-employee {
     margin-bottom: 3rem;
     text-align: center;
@@ -19,18 +20,29 @@
 }
 
 .container-employee .role {
-    margin: 0.3rem 0 1.2rem 0 ;
+    margin: 0.28rem 0 1.2rem 0 ;
 }
+
+header::after, 
+.container-employee::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 
 .phone, 
 .mail {
     color: var(--primary-color);
-    font-size: 0.7rem;
-    margin-left: 0.5rem;
+    font-size: 0.68rem;
+    margin-left: 0.48rem;
 }
 
 .container-contact {
-    margin: 0.5rem;
+    margin: 0.48rem;
     display: flex;
 }
 
@@ -42,4 +54,5 @@
 .container-contact.email {
     margin-bottom: 3rem;
 }
+
 

@@ -10,8 +10,10 @@ bgc menu #44A5CB
 :root {
     --primary-color: #246C94;
     --overlay-color:  #E5F2F6;
+    --navigation-color: #f9feff ;
     --menu-speed: 0.75s; 
     --text-main-small: 0.8rem;
+    --spacing: 0.8rem;
 }
 
 html {
@@ -47,177 +49,77 @@ a {
 
 main {
     font-size: var(--text-main-small);
-    margin: 0.8rem;
+    margin: var(--spacing);
 }
 
 h1 {
-    font-size: 1.3rem ;
+    font-size: 1.28rem ;
     font-weight: 600;
     text-align: center;
 }
 
 h2 {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.48rem;
     font-weight: 500;
     text-align: center;
-    margin: 1.5rem 1rem 1.5rem;
+    margin: 1.48rem 1rem 1.48rem;
 }
 
 .subtitle {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.48rem;
     font-size: 1rem;
 }
 
-/* menu */
+/* nav */
 
 nav {
-    background-color:var(--primary-color);
-    color: #fff;
     display: flex;
-    justify-content: center; 
-
-}
-
-nav .mainMenu {
-    display: flex;
-    list-style: none ;
-    justify-content: center;
-
-}
-
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px ;
-    text-decoration: none; 
-    text-transform: uppercase; 
-    color: var(--primary-color);
-    font-size: 1.3rem;
-}
-
-nav .mainMenu li a:hover {
-    color:violet;
-}
-
-nav .openNav {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-
-nav .mainMenu .closeNav {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-}
-
-@media(max-width:800px) {
-    nav .mainMenu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--overlay-color);
-        transition: top 1s ease;
-        display: none;
-    }
-
-    nav .mainMenu .closeNav {
-        display: block;
-         position: absolute;
-         top: 20px;
-         right: 20px;
-    }
-
-    nav .openNav {
-        display: block;
-    }
-
-    nav .mainMenu li a:hover {
-         background-color: none;
-         color: green;
-         font-size: 1.6rem; 
-    }
-}
-
-/* hamburger */
-
-
-/* @media(max-width: 768px) {
-    .mainMenu {
-        display: none;
-    }
-
-    .mainMenu.toggleCls {
-        display: block;
-    }
-}
-
-@media(min-width: 769px) {
-    .hamIcon {
-        display:none;
-    }
-}
- */
-
-/* konec hamburgru */
-
-
-
-/* .nav-wrap {
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
     background-color: var(--primary-color);
-    height: 60px;
-    box-shadow: 0px 0px 20px 3px #358CB3;
+    box-shadow: 0px 0px 20px 4px var(--primary-color);
+
 }
 
-ul {
+.nav-links {
+     justify-content: space-around;
+     margin-right: 1rem;
+     display: none;
+}
+
+.nav-links li {
     list-style: none;
+    padding: 0.6rem;
 }
 
-.menu ul {
+.nav-links a {
+    color: var(--navigation-color);
+    text-decoration: none;
+}
+
+.nav-icon span {
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    background-color: var(--navigation-color);
+}
+
+.nav-icon {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
-    text-align: center;
+    flex-direction: column;
+    color: var(--navigation-color);
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.menu li {
-    padding: 0.5rem;
-    flex-grow: 1;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.menu a:hover::after {
-    transition: opacity 0.3s ease-in;   
-    opacity: 2;
-}
-
-.menu a::after {
-    content: '';
+.home-icon {
     position: absolute;
-    display: block;
-    width: 80%;
-    opacity: 0;
-    height: 2px;
-    background-color: #358CB3;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;   
-} */
-
-.home {
-    position: absolute;
-    top: 13px;
-    left: 20px;
+    top: 20px;
+    left: 40px;
 }
 
 /* footer */
@@ -246,9 +148,9 @@ footer {
 }
 
 footer a {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: #fff;
-    margin-left: 0.5rem;
+    margin-left: 0.48rem;
 }
 
 footer a::before {
@@ -257,213 +159,21 @@ footer a::before {
     opacity: 0;
 }
 
- /* hamburger */
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-    padding:1rem;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #358CB3;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-  }
-
-  .menu-wrap {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
-
-.menu-wrap .hamburger {
-    top: 0;
-    right: 0;
-    z-index: 3;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-/* Hamburger line */
-
-.menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-
-}
-
-/* top and bottom lines  */
-.menu-wrap .hamburger > div::before, 
-.menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-
-/* moves line down  */
-.menu-wrap .hamburger > div::after {
-    top: 10px;
-}
-
-/* toggler animate */
-
-.menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-}
-
-/* turn lines into X */
-
-.menu-wrap .toggler:checked + .hamburger > div::before, 
-.menu-wrap .toggler:checked + .hamburger > div::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-/* rotate on hover when checked */
-
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-}
-
-
-/* show menu */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .toggler:checked .showcase {
-    z-index: -10;
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .menu > div {
-    background: var(--overlay-color);
-    width: 200vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    float: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-}
-
-
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu > div > div > ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    padding: 1rem;
-    z-index: 3;
-}
-
-.menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-    transition:  color 0.4s ease;
-}
-
 /* mapa */
 
-.mapa {
+.map {
     overflow: hidden;
     position: relative;
     margin: 1rem;
 }
 
-.mapa::before {
+.map::before {
     content: '';
     display: block;
     padding-top: 80%;
 }
 
-.mapa iframe {
+.map iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -483,12 +193,100 @@ footer {
 
 address p {
     text-align: center;
-    padding-bottom: 1.5rem;
-    font-size: 0.9rem;
+    padding-bottom: 1.48rem;
+    font-size: 0.88rem;
 }
 
 .contact {
     background-color: var(--overlay-color) ;
     padding: 0.5rem 0 3rem;
+    margin: 0 calc(var(--spacing) * -1) calc(var(--spacing) * -1);
+}
+    
+
+@media screen and (max-width: 649px) {
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100vh;
+        background-color: var(--overlay-color);
+        top: 70px;
+        margin: 0;
+        padding: 0 0 100px;
+        width: 100%;
+        transform: translateY(-120% );
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        margin: 0.48rem;
+        opacity: 0;
+    }
+
+    .nav-links a {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        padding: 0.48rem;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform:translateY(50px)
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .toggle .bar1 {
+        transform: rotate(-45deg) translate(-8px, 7px) ;
+    }
+    .toggle .bar2{
+        opacity: 0;
+    }
+
+    .toggle .bar3 {
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+
+}
+    
+@media screen and (min-width: 650px) {
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 0.48rem;
+        transition: all 0.3s ease;
     }
     
+    .nav-links a:hover, 
+    .nav-links a.active {
+        border: 1px solid var(--navigation-color);
+    }
+        
+    
+    /*     .nav-links a.active {
+        background-color:var(--overlay-color);
+        color: var(--primary-color);
+    */
+    
+}    
