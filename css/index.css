@@ -38,25 +38,25 @@ h1 {
 
 .table-schedule th {
     font-weight: 600;
+    padding-bottom: 0.5rem;
 }
 
-.table-shedule td {
-    width: 50px;
-}
 
 tr:first-child {
     line-height: 1.4;
 }
 
+.table-schedule td {
+    border: 1px solid var(--overlay-color);
+    padding: 0.5rem 0.1rem;  
+}
+
 td:first-child {
     font-weight: 600;
     text-transform: uppercase;
+    width: 30px;
 }
 
-.table-schedule td {
-    border: 1px solid var(--overlay-color);
-    padding: 0.5rem 0.2rem;  
-}
 
 .note {
     font-size: 0.6rem;
