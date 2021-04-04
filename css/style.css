@@ -143,7 +143,7 @@ footer {
 
 
 .icon {
-    padding: 1px;
+    margin-right: 10px;
 }
 
 .container-contact {
@@ -293,6 +293,12 @@ address p {
         }
 }
 
+@media screen and (min-width:500px) {
+    footer a {
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (min-width: 650px) {
     .nav-icon {
         display: none;
@@ -321,3 +327,4 @@ address p {
     */
     
 }    
+

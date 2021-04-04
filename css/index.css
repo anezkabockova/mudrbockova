@@ -19,6 +19,7 @@ h1 {
     font-size: var(--text-main-small);
     line-height: 1.8;
     border-radius: 5px;
+    width: 90%;
 }
 
 .container-box p:last-child {
@@ -121,9 +122,17 @@ footer {
         font-size: 0.76rem;
     }
 
+    .table-schedule td {
+        padding: 0.7rem 0.2rem;
+    }
+
     .container-box, 
     address p {
         font-size: 1rem;
+    }
+    .container-box {
+        width: 85%;
+        padding: 1rem;
     }
 
 }
