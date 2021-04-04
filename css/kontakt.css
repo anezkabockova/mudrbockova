@@ -56,3 +56,16 @@ header::after,
 }
 
 
+@media screen and (min-width:400px) {
+    .container-employee .employee {
+        font-size: 1.2rem;
+    }
+
+    .phone, 
+    .mail {
+        font-size: 0.88rem;
+        margin-left: 1rem;
+}
+
+    
+}

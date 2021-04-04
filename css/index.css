@@ -116,9 +116,9 @@ footer {
     margin: 0;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 400px) {
     .table-schedule {
-        font-size: 0.8rem;
+        font-size: 0.76rem;
     }
 
     .container-box, 

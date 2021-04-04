@@ -265,7 +265,7 @@ address p {
 
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 400px) {
     main {
         margin: var(--spacing-M);
         font-size: var(--text-main-M);
@@ -276,7 +276,7 @@ address p {
     }
 
     footer a {
-        font-size: 1rem;
+        font-size: 0.94rem;
     }
 
     h1 {

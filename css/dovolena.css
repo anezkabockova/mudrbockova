@@ -5,7 +5,7 @@ header::after {
     margin-top: 1rem;
 }
 
-.vaccation {
+.vacation {
     text-align: center;
     line-height: 1.8;
     font-size: var(--text-main-small);
@@ -18,4 +18,10 @@ header::after {
 
 main {
     margin-bottom: 10rem;
+}
+
+@media screen and (min-width:400px) {
+    .vacation {
+        font-size: var(--text-main-M);
+    } 
 }
