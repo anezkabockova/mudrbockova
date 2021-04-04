@@ -16,7 +16,7 @@ h1 {
     background-color: var(--overlay-color) ;
     margin: 1rem 1rem 2rem;
     text-align: center;
-    font-size: var(--text-main-small);
+    font-size: var(--text-main);
     line-height: 1.8;
     border-radius: 5px;
     width: 90%;
@@ -86,7 +86,6 @@ address {
 address p {
     text-align: center;
     padding-bottom: 1rem;
-    font-size: var(--text-main-small);
 }
 
 
@@ -126,13 +125,20 @@ footer {
         padding: 0.7rem 0.2rem;
     }
 
-    .container-box, 
-    address p {
-        font-size: 1rem;
-    }
     .container-box {
         width: 85%;
         padding: 1rem;
+    }
+
+}
+
+@media screen and (min-width:500px) {
+    .table-schedule {
+        font-size: 0.92rem;
+    }    
+    
+    .table-schedule td {
+        padding: 0.8rem 0.2rem;
     }
 
 }

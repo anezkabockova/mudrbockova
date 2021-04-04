@@ -12,10 +12,8 @@ bgc menu #44A5CB
     --overlay-color:  #E5F2F6;
     --navigation-color: #f9feff ;
     --menu-speed: 0.75s; 
-    --text-main-small: 0.8rem;
-    --text-main-M: 1rem;
+    --text-main: 0.8rem;
     --spacing: 0.8rem;
-    --spacing-M: 1.2rem;
 }
 
 html {
@@ -50,7 +48,7 @@ a {
 }
 
 main {
-    font-size: var(--text-main-small);
+    font-size: var(--text-main);
     margin: var(--spacing);
 }
 
@@ -227,13 +225,13 @@ address p {
     }
 
     .nav-links li {
-        margin: 0.48rem;
+        margin: 1rem;
         opacity: 0;
     }
 
     .nav-links a {
         color: var(--primary-color);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0.48rem;
     }
 
@@ -266,13 +264,9 @@ address p {
 }
 
 @media screen and (min-width: 400px) {
-    main {
-        margin: var(--spacing-M);
-        font-size: var(--text-main-M);
-    }
-    
-    .contact {
-        margin: 0 calc(var(--spacing-M) * -1) calc(var(--spacing-M) * -1);
+    :root {
+        --text-main: 1rem;
+        --spacing: 1.2rem;
     }
 
     footer a {
@@ -295,8 +289,13 @@ address p {
 
 @media screen and (min-width:500px) {
     footer a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    .nav-links a {
+        font-size: 1.8rem;
+    }
+    
 }
 
 @media screen and (min-width: 650px) {

@@ -5,7 +5,6 @@ vytvořit pseudoelement mezi tbody */
 
 .pricelist {
     line-height: 1.5;
-    font-size: var(--text-main-small);
     margin: 0 auto 2rem;
     width: 90%;
     max-width: 400px;
