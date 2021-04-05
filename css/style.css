@@ -141,7 +141,7 @@ footer {
 
 
 .icon {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .container-contact {
@@ -150,9 +150,11 @@ footer {
 }
 
 footer a {
-    font-size: 0.68rem;
+    font-size: 0.66rem;
     color: #fff;
     margin-left: 0.48rem;
+    display: flex;
+    align-items: center;
 }
 
 footer a::before {

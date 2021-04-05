@@ -33,11 +33,15 @@ header::after,
     color: var(--primary-color);
     font-size: 0.68rem;
     margin-left: 0.48rem;
+    display: flex;
+    align-self: center;
+
 }
 
 .container-contact {
     margin: 0.48rem;
     display: flex;
+    align-items: center;
 }
 
 .icon {
