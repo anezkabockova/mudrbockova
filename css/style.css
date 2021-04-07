@@ -98,6 +98,7 @@ nav {
 .nav-links a {
     color: var(--navigation-color);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .nav-icon span {
@@ -129,14 +130,12 @@ nav {
 footer {
     background-color: var(--primary-color);
     display: flex;
-    margin-top: 3rem;
-    padding: 1rem 1rem 3rem;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 3rem;
     color: #fff;
     box-shadow: 0px 5px 20px 8px var(--primary-color);
-    align-items: baseline;
-    position: relative;
 }
 
 
@@ -146,7 +145,9 @@ footer {
 
 .container-contact {
     display: flex;
+    justify-content: center;
     margin-top: 1.2rem;
+    width: 100%;
 }
 
 footer a {
@@ -320,11 +321,16 @@ address p {
         border-radius: 5px;
         padding: 0.48rem;
         transition: all 0.3s ease;
+        font-size: 1rem;
     }
     
     .nav-links a:hover, 
     .nav-links a.active {
         border: 1px solid var(--navigation-color);
+    }
+
+    .container-contact {
+        margin-top: 2rem;
     }
         
     

@@ -42,8 +42,7 @@ header::after,
     margin-bottom: 0.5rem;
 }
 
-.container-contact {
-    margin: 0.48rem;
+.cont-contact {
     display: flex;
     align-items: center;
 }
@@ -53,8 +52,8 @@ header::after,
     align-self: baseline;
 }
 
-.container-contact.email {
-    margin-bottom: 3rem;
+.cont-contact.email {
+    margin: 0.6rem 0 3rem;
 }
 
 
@@ -84,4 +83,10 @@ header::after,
     .container-employee .employee {
         margin-bottom: 0.8rem;
     }
+}
+
+@media screen and (min-width:650px) {
+    .cont-contact.email {
+        margin: 1rem 0 3rem;
+    }    
 }

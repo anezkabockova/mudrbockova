@@ -44,3 +44,9 @@ h3 {
     width: 100%;
     padding: 3rem 1rem 2rem;
 }
+
+@media screen and (min-width:650px) {
+    h3 {
+        width: 50%;
+    }
+}
