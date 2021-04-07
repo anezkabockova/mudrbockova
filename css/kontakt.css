@@ -11,6 +11,7 @@
 .container-employee .employee {
     font-weight: 600; 
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .container-employee .status {
@@ -35,7 +36,10 @@ header::after,
     margin-left: 0.48rem;
     display: flex;
     align-self: center;
+}
 
+.phone {
+    margin-bottom: 0.5rem;
 }
 
 .container-contact {
@@ -63,7 +67,21 @@ header::after,
     .mail {
         font-size: 0.88rem;
         margin-left: 1rem;
+    }
 }
 
-    
+@media screen and (min-width:500px) {
+    .container-employee .employee {
+        font-size: 1.2rem;
+    }
+
+    .phone, 
+    .mail {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .container-employee .employee {
+        margin-bottom: 0.8rem;
+    }
 }
