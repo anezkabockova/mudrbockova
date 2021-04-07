@@ -13,6 +13,7 @@
 
 .gallery-item img {
     width: 90%;
+    max-width: 280px;
 }
 
 .gallery-item:last-child {

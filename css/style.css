@@ -152,7 +152,6 @@ footer {
 footer a {
     font-size: 0.66rem;
     color: #fff;
-    margin-left: 0.48rem;
     display: flex;
     align-items: center;
 }
@@ -295,7 +294,7 @@ address p {
     }
 
     .nav-links a {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
 }

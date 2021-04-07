@@ -35,9 +35,9 @@ h3 {
     font-weight: 700;
 }
 
-dd {
+.vaccination dd {
     margin-left: 0.4rem;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .img-injection {
