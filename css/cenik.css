@@ -7,7 +7,11 @@ vytvořit pseudoelement mezi tbody */
     line-height: 1.5;
     margin: 0 auto 2rem;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
+}
+
+.pricelist .title-pricelist  {
+    margin-bottom: 0.5rem;
 }
 
 .pricelist tr :first-child {
@@ -29,5 +33,11 @@ vytvořit pseudoelement mezi tbody */
 .pricelist tbody tr .title-pricelist {
     text-align: left;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:400px) {
+    .pricelist tbody tr .title-pricelist {
+        font-size: 1.1rem;
+    }
 }
