@@ -308,6 +308,11 @@ address p {
 }
 
 @media screen and (min-width: 650px) {
+    :root {
+        --text-main: 1rem;
+        --spacing: 3rem;
+    }  
+  
     .nav-icon {
         display: none;
     }
