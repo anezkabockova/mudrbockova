@@ -25,6 +25,7 @@ h1 {
     line-height: 1.8;
     border-radius: 5px;
     width: 90%;
+    max-width: 600px;
 }
 
 .container-box p:last-child {
@@ -40,6 +41,7 @@ h1 {
     text-align: center;
     margin: 1rem auto 3rem;
     border-collapse: collapse;
+    max-width: 650px;
 }
 
 .table-schedule th {
@@ -96,19 +98,22 @@ address p {
 
 /* mapa */
 
-.mapa {
+.map {
     overflow: hidden;
     position: relative;
-    margin: 1rem;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 500px;
+    width: 90%;
 }
 
-.mapa::before {
+.map::before {
     content: '';
     display: block;
     padding-top: 80%;
 }
 
-.mapa iframe {
+.map iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -145,5 +150,38 @@ footer {
     .table-schedule td {
         padding: 0.8rem 0.2rem;
     }
+
+}
+
+@media screen and (min-width:650px) {
+    .table-schedule {
+        font-size: 1rem;
+    }    
+    
+    .table-schedule td {
+        padding: 1rem 0.2rem;
+    }
+
+    td:first-child {
+        width: 50px;
+    }
+    .table-schedule th {
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width:650px) {
+  
+    .table-schedule th {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    .staroflife {
+        margin-top: 3rem;
+    }
+
 
 }

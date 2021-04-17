@@ -7,7 +7,8 @@
 
 .img-header img {
     width: 80%;
-    margin-top: 1rem;
+    margin: 1rem 0;
+    max-width: 650px;
 }
 
 h3 {
@@ -64,5 +65,46 @@ h3 {
 
     main {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width:800px) {
+  
+    main {
+        width: 75%;
+        margin: 0 auto 6rem;
+    }
+
+    .img-header {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:900px) {
+  
+    main {
+        width: 70%;
+        margin: 0 auto 6rem;
+    }
+
+    .img-header {
+        width: 75%;
+    }
+
+    .vaccination {
+        padding: 1rem 1rem 2rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+  
+    main {
+        width: 65%;
+        margin: 0 auto 6rem;
+        max-width: 650px;
+    }
+
+    .img-header {
+        width: 70%;
     }
 }

@@ -5,9 +5,9 @@ vytvořit pseudoelement mezi tbody */
 
 .pricelist {
     line-height: 1.5;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2.4rem;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .pricelist .title-pricelist  {
@@ -26,8 +26,9 @@ vytvořit pseudoelement mezi tbody */
 }
 
 .pricelist-footnote {
-    margin: 3rem 1.2rem 5rem;
+    margin: 3rem 0 5rem;
     font-size: var(--primary-color);
+    text-align: center;
 }
 
 .pricelist tbody tr .title-pricelist {
@@ -39,5 +40,13 @@ vytvořit pseudoelement mezi tbody */
 @media screen and (min-width:400px) {
     .pricelist tbody tr .title-pricelist {
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .pricelist-footnote {
+        margin: 4rem 0 5rem;
+        font-size: var(--primary-color);
+        text-align: center;
     }
 }
