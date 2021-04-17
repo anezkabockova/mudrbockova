@@ -304,6 +304,11 @@ address p {
     .icon {
         margin-right: 12px;
     }
+
+    h3 {
+        padding: 2rem;
+        font-size: 1,44rem;
+    }
     
 }
 
