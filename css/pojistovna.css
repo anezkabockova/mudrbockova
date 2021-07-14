@@ -1,15 +1,16 @@
 /* pojistovna */
+
 .gallery {
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .gallery-item {
     display: flex;
     justify-content: center;
     padding: 0.8rem;
-    width: 80%;
 }
 
 .gallery-item img {
@@ -21,16 +22,21 @@
     margin-bottom: 4rem;
 }
 
+
 @media screen and (min-width:800px) {
+
+    :root {
+        --spacing: 0rem;
+    }
+
     .gallery {
         flex-wrap: wrap;
         flex-direction: row;
     }
     
     .gallery-item {
-        width: 60%;
         margin: auto;
     }
-    
+
 
 }

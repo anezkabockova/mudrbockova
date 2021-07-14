@@ -17,7 +17,7 @@ h1 {
 
 .container-box {
     border: 2px solid var(--primary-color);
-    padding: 0.7rem;
+    padding: 0.8rem;
     background-color: var(--overlay-color) ;
     margin: 1rem 1rem 2rem;
     text-align: center;
@@ -37,26 +37,21 @@ h1 {
 /* table */
 
 .table-schedule {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     margin: 1rem auto 3rem;
     border-collapse: collapse;
     max-width: 650px;
 }
 
-.table-schedule th {
-    font-weight: 600;
-    padding-bottom: 0.5rem;
-}
-
-
-tr:first-child {
+/* tr:first-child {
     line-height: 1.4;
 }
+ */
 
 .table-schedule td {
     border: 1px solid var(--overlay-color);
-    padding: 0.5rem 0.1rem;  
+    padding: 0.6rem 0.8rem;  
 }
 
 td:first-child {
@@ -65,34 +60,26 @@ td:first-child {
     width: 30px;
 }
 
-
-.note {
-    font-size: 0.6rem;
-    margin: 0.48rem 0 2.48rem 0.48rem;
-}
-
-/* tr:last-child:after {
-    content: '* PN = pracovní neschopnost';
-    width: 200px;
-    position: absolute;
-    left: 0;
-    bottom: -115px;
-} */
-
 /* kontakt */
 
 .contact {
     background-color: var(--overlay-color) ;
-    padding: 0.48rem 0 3rem;
+    padding: 0.5rem 0 3rem;
 }
         
-address {
+.address {
     font-style: normal;
+    font-size: 1rem;
 }
 
-address p {
-    text-align: center;
+.address ul {
     padding-bottom: 1rem;
+    padding-left: 0;
+}
+
+.address li {
+    list-style: none;
+    text-align: center;
 }
 
 
@@ -128,11 +115,11 @@ footer {
 
 @media screen and (min-width: 400px) {
     .table-schedule {
-        font-size: 0.76rem;
+        font-size: 1rem;
     }
 
     .table-schedule td {
-        padding: 0.7rem 0.2rem;
+        padding: 1rem;
     }
 
     .container-box {
@@ -142,16 +129,6 @@ footer {
 
 }
 
-@media screen and (min-width:500px) {
-    .table-schedule {
-        font-size: 0.92rem;
-    }    
-    
-    .table-schedule td {
-        padding: 0.8rem 0.2rem;
-    }
-
-}
 
 @media screen and (min-width:650px) {
     .table-schedule {
@@ -159,7 +136,7 @@ footer {
     }    
     
     .table-schedule td {
-        padding: 1rem 0.2rem;
+        padding: 1rem 1.6rem;
     }
 
     td:first-child {

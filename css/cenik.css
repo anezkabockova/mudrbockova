@@ -12,9 +12,14 @@ vytvořit pseudoelement mezi tbody */
 
 .pricelist .title-pricelist  {
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
-.pricelist tr :first-child {
+.title-picelist:first-child {
+    font-weight: 600;
+}
+
+.pricelist :first-child {
     text-align: left;
     font-weight: normal;
     width: 70%;
@@ -33,7 +38,6 @@ vytvořit pseudoelement mezi tbody */
 
 .pricelist tbody tr .title-pricelist {
     text-align: left;
-    font-weight: bold;
     font-size: 0.8rem;
 }
 
